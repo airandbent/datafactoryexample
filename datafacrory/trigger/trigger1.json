@@ -4,7 +4,7 @@
 		"annotations": [
 			"@pipeline().parameters.modelo"
 		],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
