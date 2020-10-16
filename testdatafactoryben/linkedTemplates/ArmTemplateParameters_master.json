@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testdatafactoryben"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"primero de mes_properties_pipeline1_parameters_path": {
+			"value": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
+		},
+		"primero de mes_properties_pipeline1_parameters_notebook": {
+			"value": "Ejemplo"
+		},
+		"primero de mes_properties_pipeline1_parameters_modelo": {
+			"value": "wine_model"
+		},
+		"primero de mes_properties_pipeline1_parameters_cluster_id": {
+			"value": "0923-184230-condo559"
+		},
+		"primero de mes_properties_pipeline1_parameters_library": {
+			"value": "1"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
