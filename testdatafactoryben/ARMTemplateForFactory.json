@@ -10,46 +10,6 @@
 		"AzureDatabricks1_accessToken": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
-		},
-		"primero de mes_properties_pipeline1_parameters_path": {
-			"type": "string",
-			"defaultValue": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
-		},
-		"primero de mes_properties_pipeline1_parameters_notebook": {
-			"type": "string",
-			"defaultValue": "Ejemplo"
-		},
-		"primero de mes_properties_pipeline1_parameters_modelo": {
-			"type": "string",
-			"defaultValue": "wine_model"
-		},
-		"primero de mes_properties_pipeline1_parameters_cluster_id": {
-			"type": "string",
-			"defaultValue": "0923-184230-condo559"
-		},
-		"primero de mes_properties_pipeline1_parameters_library": {
-			"type": "string",
-			"defaultValue": "1"
-		},
-		"trigger1_properties_pipeline1_parameters_path": {
-			"type": "string",
-			"defaultValue": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
-		},
-		"trigger1_properties_pipeline1_parameters_notebook": {
-			"type": "string",
-			"defaultValue": "Ejemplo"
-		},
-		"trigger1_properties_pipeline1_parameters_modelo": {
-			"type": "string",
-			"defaultValue": "XYZ"
-		},
-		"trigger1_properties_pipeline1_parameters_cluster_id": {
-			"type": "string",
-			"defaultValue": "A"
-		},
-		"trigger1_properties_pipeline1_parameters_library": {
-			"type": "string",
-			"defaultValue": "B"
 		}
 	},
 	"variables": {
@@ -188,22 +148,8 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "pipeline1",
-							"type": "PipelineReference"
-						},
-						"parameters": {
-							"path": "[parameters('primero de mes_properties_pipeline1_parameters_path')]",
-							"notebook": "[parameters('primero de mes_properties_pipeline1_parameters_notebook')]",
-							"modelo": "[parameters('primero de mes_properties_pipeline1_parameters_modelo')]",
-							"cluster_id": "[parameters('primero de mes_properties_pipeline1_parameters_cluster_id')]",
-							"library": "[parameters('primero de mes_properties_pipeline1_parameters_library')]"
-						}
-					}
-				],
+				"runtimeState": "Stopped",
+				"pipelines": [],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
@@ -219,9 +165,7 @@
 					}
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/pipeline1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/trigger1')]",
@@ -231,22 +175,8 @@
 				"annotations": [
 					"@pipeline().parameters.modelo"
 				],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "pipeline1",
-							"type": "PipelineReference"
-						},
-						"parameters": {
-							"path": "[parameters('trigger1_properties_pipeline1_parameters_path')]",
-							"notebook": "[parameters('trigger1_properties_pipeline1_parameters_notebook')]",
-							"modelo": "[parameters('trigger1_properties_pipeline1_parameters_modelo')]",
-							"cluster_id": "[parameters('trigger1_properties_pipeline1_parameters_cluster_id')]",
-							"library": "[parameters('trigger1_properties_pipeline1_parameters_library')]"
-						}
-					}
-				],
+				"runtimeState": "Stopped",
+				"pipelines": [],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
@@ -268,9 +198,7 @@
 					}
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/pipeline1')]"
-			]
+			"dependsOn": []
 		}
 	]
 }

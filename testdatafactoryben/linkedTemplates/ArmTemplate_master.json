@@ -11,46 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
 		},
-		"primero de mes_properties_pipeline1_parameters_path": {
-			"type": "string",
-			"defaultValue": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
-		},
-		"primero de mes_properties_pipeline1_parameters_notebook": {
-			"type": "string",
-			"defaultValue": "Ejemplo"
-		},
-		"primero de mes_properties_pipeline1_parameters_modelo": {
-			"type": "string",
-			"defaultValue": "wine_model"
-		},
-		"primero de mes_properties_pipeline1_parameters_cluster_id": {
-			"type": "string",
-			"defaultValue": "0923-184230-condo559"
-		},
-		"primero de mes_properties_pipeline1_parameters_library": {
-			"type": "string",
-			"defaultValue": "1"
-		},
-		"trigger1_properties_pipeline1_parameters_path": {
-			"type": "string",
-			"defaultValue": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
-		},
-		"trigger1_properties_pipeline1_parameters_notebook": {
-			"type": "string",
-			"defaultValue": "Ejemplo"
-		},
-		"trigger1_properties_pipeline1_parameters_modelo": {
-			"type": "string",
-			"defaultValue": "XYZ"
-		},
-		"trigger1_properties_pipeline1_parameters_cluster_id": {
-			"type": "string",
-			"defaultValue": "A"
-		},
-		"trigger1_properties_pipeline1_parameters_library": {
-			"type": "string",
-			"defaultValue": "B"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -80,36 +40,6 @@
 					},
 					"AzureDatabricks1_accessToken": {
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
-					},
-					"primero de mes_properties_pipeline1_parameters_path": {
-						"value": "[parameters('primero de mes_properties_pipeline1_parameters_path')]"
-					},
-					"primero de mes_properties_pipeline1_parameters_notebook": {
-						"value": "[parameters('primero de mes_properties_pipeline1_parameters_notebook')]"
-					},
-					"primero de mes_properties_pipeline1_parameters_modelo": {
-						"value": "[parameters('primero de mes_properties_pipeline1_parameters_modelo')]"
-					},
-					"primero de mes_properties_pipeline1_parameters_cluster_id": {
-						"value": "[parameters('primero de mes_properties_pipeline1_parameters_cluster_id')]"
-					},
-					"primero de mes_properties_pipeline1_parameters_library": {
-						"value": "[parameters('primero de mes_properties_pipeline1_parameters_library')]"
-					},
-					"trigger1_properties_pipeline1_parameters_path": {
-						"value": "[parameters('trigger1_properties_pipeline1_parameters_path')]"
-					},
-					"trigger1_properties_pipeline1_parameters_notebook": {
-						"value": "[parameters('trigger1_properties_pipeline1_parameters_notebook')]"
-					},
-					"trigger1_properties_pipeline1_parameters_modelo": {
-						"value": "[parameters('trigger1_properties_pipeline1_parameters_modelo')]"
-					},
-					"trigger1_properties_pipeline1_parameters_cluster_id": {
-						"value": "[parameters('trigger1_properties_pipeline1_parameters_cluster_id')]"
-					},
-					"trigger1_properties_pipeline1_parameters_library": {
-						"value": "[parameters('trigger1_properties_pipeline1_parameters_library')]"
 					}
 				}
 			},
