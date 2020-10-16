@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Entrenamiento del modelo",
+				"description": "",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -13,7 +14,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Nombre_modelo",
+						"value": "@pipeline().parameters.modelo"
+					}
+				],
 				"typeProperties": {
 					"notebookPath": {
 						"value": "@concat(pipeline().parameters.path,pipeline().parameters.notebook)",
