@@ -29,10 +29,10 @@
 				"timeZone": "UTC",
 				"schedule": {
 					"minutes": [
-						57
+						0
 					],
 					"hours": [
-						10
+						9
 					],
 					"monthDays": [
 						16
