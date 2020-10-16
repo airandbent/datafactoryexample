@@ -59,8 +59,7 @@
 			}
 		},
 		"annotations": [
-			"@pipeline().parameters.modelo",
-			"modelo"
+			"@pipeline().parameters.modelo"
 		]
 	}
 }
