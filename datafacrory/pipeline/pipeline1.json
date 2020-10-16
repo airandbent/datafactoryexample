@@ -1,6 +1,7 @@
 {
 	"name": "pipeline1",
 	"properties": {
+		"description": "Prueba modelo @pipeline().parameters.modelo",
 		"activities": [
 			{
 				"name": "Entrenamiento del modelo",
@@ -57,6 +58,9 @@
 				"defaultValue": "dbfs:/FileStore/jars/d4e9fc9c_e3a7_45f9_a1a5_fee41431dd6d-nba_xsell_churn_0_0_16_py3_7-e856b.egg"
 			}
 		},
-		"annotations": []
+		"annotations": [
+			"@pipeline().parameters.modelo",
+			"modelo"
+		]
 	}
 }
