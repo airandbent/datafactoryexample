@@ -73,9 +73,11 @@
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"description": "Prueba modelo @pipeline().parameters.modelo",
 				"activities": [
 					{
 						"name": "Entrenamiento del modelo",
+						"description": "",
 						"type": "DatabricksNotebook",
 						"dependsOn": [],
 						"policy": {
@@ -85,7 +87,12 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
+						"userProperties": [
+							{
+								"name": "Nombre_modelo",
+								"value": "@pipeline().parameters.modelo"
+							}
+						],
 						"typeProperties": {
 							"notebookPath": {
 								"value": "@concat(pipeline().parameters.path,pipeline().parameters.notebook)",
@@ -123,7 +130,10 @@
 						"defaultValue": "dbfs:/FileStore/jars/d4e9fc9c_e3a7_45f9_a1a5_fee41431dd6d-nba_xsell_churn_0_0_16_py3_7-e856b.egg"
 					}
 				},
-				"annotations": []
+				"annotations": [
+					"@pipeline().parameters.modelo",
+					"modelo"
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks1')]"
