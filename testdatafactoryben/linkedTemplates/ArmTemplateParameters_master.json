@@ -23,6 +23,21 @@
 		"primero de mes_properties_pipeline1_parameters_library": {
 			"value": "1"
 		},
+		"trigger1_properties_pipeline1_parameters_path": {
+			"value": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
+		},
+		"trigger1_properties_pipeline1_parameters_notebook": {
+			"value": "Ejemplo"
+		},
+		"trigger1_properties_pipeline1_parameters_modelo": {
+			"value": "XYZ"
+		},
+		"trigger1_properties_pipeline1_parameters_cluster_id": {
+			"value": "A"
+		},
+		"trigger1_properties_pipeline1_parameters_library": {
+			"value": "B"
+		},
 		"containerUri": {
 			"value": ""
 		},
