@@ -1,0 +1,36 @@
+{
+	"name": "primero de mes",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"path": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/",
+					"notebook": "Ejemplo",
+					"modelo": "wine_model",
+					"cluster_id": "0923-184230-condo559",
+					"library": "1"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Month",
+				"interval": 1,
+				"startTime": "2020-10-16T08:33:00.000Z",
+				"timeZone": "UTC",
+				"schedule": {
+					"monthDays": [
+						1
+					]
+				}
+			}
+		}
+	}
+}

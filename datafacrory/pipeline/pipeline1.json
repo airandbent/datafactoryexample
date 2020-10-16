@@ -1,0 +1,56 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Entrenamiento del modelo",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": {
+						"value": "@concat(pipeline().parameters.path,pipeline().parameters.notebook)",
+						"type": "Expression"
+					},
+					"baseParameters": {
+						"modelo": "@pipeline().parameters.modelo"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"path": {
+				"type": "string",
+				"defaultValue": "/Users/seele.soul.17_gmail.com#ext#@seelesoul17gmail.onmicrosoft.com/Notebooks/"
+			},
+			"notebook": {
+				"type": "string",
+				"defaultValue": "Ejemplo"
+			},
+			"modelo": {
+				"type": "string",
+				"defaultValue": "wine_model"
+			},
+			"cluster_id": {
+				"type": "string",
+				"defaultValue": "0923-184230-condo559"
+			},
+			"library": {
+				"type": "string",
+				"defaultValue": "dbfs:/FileStore/jars/d4e9fc9c_e3a7_45f9_a1a5_fee41431dd6d-nba_xsell_churn_0_0_16_py3_7-e856b.egg"
+			}
+		},
+		"annotations": []
+	}
+}
